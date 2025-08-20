@@ -2,7 +2,7 @@
   <Title Text="" Alignment="Left" />
   <DataSources>
     <SqlDataSource Name="rept_usp_get_ostf_annual_summary_report" ComponentName="sqlDataSource1">
-      <Connection Name="PresTrustDbConnectionStrings" FromAppConfig="true" />
+      <Connection Name="GreenCountyDbConnectionStrings" FromAppConfig="true" />
       <Query Type="CustomSqlQuery" Name="Core_View_AgencyEntities_OSTF">
         <Sql>select "Core.View_AgencyEntities_OSTF"."AgencyId","Core.View_AgencyEntities_OSTF"."AgencyName" from "Core"."View_AgencyEntities_OSTF" "Core.View_AgencyEntities_OSTF"</Sql>
       </Query>

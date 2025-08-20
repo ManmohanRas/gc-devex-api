@@ -19,7 +19,7 @@ namespace PresTrust.DevExReports.API.Domain
             /// <summary>
             /// constant for the ConnectionString Section
             /// </summary>
-            public const string PRESTRUST_SQL_DB_CONNECTION_STRING_SECTION = "PresTrustDbConnectionStrings";
+            public const string PRESTRUST_SQL_DB_CONNECTION_STRING_SECTION = "GreenCountyDbConnectionStrings";
             /// <summary>
             /// constant for the API Resource Base Url (external apis) Section
             /// </summary>
