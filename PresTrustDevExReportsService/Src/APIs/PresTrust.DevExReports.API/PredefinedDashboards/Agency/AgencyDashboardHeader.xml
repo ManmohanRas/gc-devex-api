@@ -3,7 +3,7 @@
   <Title Text=" " Alignment="Left" IncludeMasterFilterState="false" />
   <DataSources>
     <SqlDataSource Name="rept_usp_get_program_summary_report" ComponentName="sqlDataSource1">
-      <Connection Name="PresTrustDbConnectionStrings" FromAppConfig="true" />
+      <Connection Name="GreenCountyDbConnectionStrings" FromAppConfig="true" />
       <Query Type="StoredProcQuery" Name="rept_usp_get_program_summary_report">
         <ProcName>rept.usp_get_program_summary_report</ProcName>
       </Query>
