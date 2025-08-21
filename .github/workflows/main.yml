@@ -16,7 +16,7 @@ jobs:
       - name: Set up .NET SDK
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '5.0.x'  # You can use '5.0.x' if you're not upgrading (not recommended)
+          dotnet-version: '8.0.x'  # You can use '8.0.x' if you're not upgrading (not recommended)
 
       - name: Create nuget.config with DevExpress feed
         shell: bash
