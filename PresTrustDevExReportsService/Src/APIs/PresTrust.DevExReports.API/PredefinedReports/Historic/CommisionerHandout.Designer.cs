@@ -26,7 +26,6 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Historic {
             this.label7 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label7");
             this.label97 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label97");
             this.pageInfo2 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPageInfo>("pageInfo2");
-            this.pictureBox3 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPictureBox>("pictureBox3");
             this.label60 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label60");
             this.line2 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLine>("line2");
             this.Detail1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.DetailBand>("Detail1");
@@ -53,7 +52,6 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Historic {
             this.tableCell3 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableCell>("tableCell3");
             this.tableCell4 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableCell>("tableCell4");
             this.label1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label1");
-            this.pictureBox1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPictureBox>("pictureBox1");
             this.Detail2 = reportInitializer.GetControl<DevExpress.XtraReports.UI.DetailBand>("Detail2");
             this.GroupHeader2 = reportInitializer.GetControl<DevExpress.XtraReports.UI.GroupHeaderBand>("GroupHeader2");
             this.GroupFooter1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.GroupFooterBand>("GroupFooter1");
@@ -118,6 +116,7 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Historic {
             this.tableRow23 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableRow>("tableRow23");
             this.tableCell36 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableCell>("tableCell36");
             this.tableCell37 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableCell>("tableCell37");
+            this.pictureBox1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPictureBox>("pictureBox1");
 
             // Parameters
             this.FundingYear = reportInitializer.GetParameter("FundingYear");
@@ -145,7 +144,6 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Historic {
         private DevExpress.XtraReports.UI.XRLabel label7;
         private DevExpress.XtraReports.UI.XRLabel label97;
         private DevExpress.XtraReports.UI.XRPageInfo pageInfo2;
-        private DevExpress.XtraReports.UI.XRPictureBox pictureBox3;
         private DevExpress.XtraReports.UI.XRLabel label60;
         private DevExpress.XtraReports.UI.XRLine line2;
         private DevExpress.XtraReports.UI.DetailBand Detail1;
@@ -172,7 +170,6 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Historic {
         private DevExpress.XtraReports.UI.XRTableCell tableCell3;
         private DevExpress.XtraReports.UI.XRTableCell tableCell4;
         private DevExpress.XtraReports.UI.XRLabel label1;
-        private DevExpress.XtraReports.UI.XRPictureBox pictureBox1;
         private DevExpress.DataAccess.DataFederation.FederationDataSource federationDataSource1;
         private DevExpress.XtraReports.UI.DetailBand Detail2;
         private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader2;
@@ -246,5 +243,6 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Historic {
         private DevExpress.XtraReports.Parameters.Parameter PresentName;
         private DevExpress.XtraReports.Parameters.Parameter parambloburl;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource2;
+        private DevExpress.XtraReports.UI.XRPictureBox pictureBox1;
     }
 }
