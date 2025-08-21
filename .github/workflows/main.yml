@@ -39,7 +39,7 @@ jobs:
         run: dotnet publish PresTrustDevExReportsService/Src/APIs/PresTrust.DevExReports.API/PresTrust.DevExReports.API.csproj --configuration Release --output ./publish
 
       - name: Deploy to Azure Web App
-        uses: azure/webapps-deploy@v2
+        uses: azure/webapps-deploy@v1
         with:
           app-name: 'api-greencounty-reports'  # 🔁 Replace with your Azure Web App name
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_26D57BB4319940FDBF54323B6AD649CF }}
