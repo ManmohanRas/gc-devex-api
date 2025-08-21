@@ -112,7 +112,7 @@
                     <Item1 Ref="62" ControlType="XRTableCell" Name="tableCell11" Weight="2.5166665649414059" Multiline="true" Text="Total Cost of Project:" TextAlignment="MiddleLeft" Font="Segoe UI Semibold, 12pt, style=Bold" Borders="All">
                       <StylePriority Ref="63" UseFont="false" UseBorders="false" UseTextAlignment="false" />
                     </Item1>
-                    <Item2 Ref="64" ControlType="XRTableCell" Name="tableCell12" Weight="1.6166668701171876" TextFormatString="{0:$####,###}" Multiline="true" Text="tableCell6" TextAlignment="MiddleRight" Font="Segoe UI Semilight, 10pt" Borders="All">
+                    <Item2 Ref="64" ControlType="XRTableCell" Name="tableCell12" Weight="1.6166668701171876" TextFormatString="{0:$0.00}" Multiline="true" Text="tableCell6" TextAlignment="MiddleRight" Font="Segoe UI Semilight, 10pt" Borders="All">
                       <Summary Ref="65" Running="Report" />
                       <ExpressionBindings>
                         <Item1 Ref="66" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([TotalCostOfLand])" />
@@ -144,7 +144,7 @@
                       </ExpressionBindings>
                       <StylePriority Ref="75" UseFont="false" UseBorders="false" UseTextAlignment="false" />
                     </Item1>
-                    <Item2 Ref="76" ControlType="XRTableCell" Name="tableCell2" Weight="1.6166668701171876" TextFormatString="{0:$####,###}" Multiline="true" ProcessNullValues="SuppressAndShrink" Text="tableCell2" TextAlignment="MiddleRight" Font="Segoe UI Semilight, 10pt" Borders="Left, Right, Bottom">
+                    <Item2 Ref="76" ControlType="XRTableCell" Name="tableCell2" Weight="1.6166668701171876" TextFormatString="{0:$0.00}" Multiline="true" ProcessNullValues="SuppressAndShrink" Text="tableCell2" TextAlignment="MiddleRight" Font="Segoe UI Semilight, 10pt" Borders="Left, Right, Bottom">
                       <ExpressionBindings>
                         <Item1 Ref="77" EventName="BeforePrint" PropertyName="Text" Expression="Iif([Title]not like'%Demolition Funds%',[EstGrantAmount],'')&#xA;" />
                       </ExpressionBindings>
@@ -195,10 +195,10 @@
               <Rows>
                 <Item1 Ref="96" ControlType="XRTableRow" Name="tableRow4" Weight="1">
                   <Cells>
-                    <Item1 Ref="97" ControlType="XRTableCell" Name="tableCell7" Weight="2.5166665649414059" Multiline="true" Text="MC Acquisition Funds Request:" TextAlignment="MiddleLeft" Font="Segoe UI Semibold, 12pt, style=Bold" Borders="Left, Right, Bottom">
+                    <Item1 Ref="97" ControlType="XRTableCell" Name="tableCell7" Weight="2.5166665649414059" Multiline="true" Text="GC Acquisition Funds Request:" TextAlignment="MiddleLeft" Font="Segoe UI Semibold, 12pt, style=Bold" Borders="Left, Right, Bottom">
                       <StylePriority Ref="98" UseFont="false" UseBorders="false" UseTextAlignment="false" />
                     </Item1>
-                    <Item2 Ref="99" ControlType="XRTableCell" Name="tableCell8" Weight="1.6166668701171871" TextFormatString="{0:$####,###}" Multiline="true" TextAlignment="MiddleRight" Font="Segoe UI Semilight, 10pt" Borders="Left, Right, Bottom">
+                    <Item2 Ref="99" ControlType="XRTableCell" Name="tableCell8" Weight="1.6166668701171871" TextFormatString="{0:$0.00}" Multiline="true" TextAlignment="MiddleRight" Font="Segoe UI Semilight, 10pt" Borders="Left, Right, Bottom">
                       <ExpressionBindings>
                         <Item1 Ref="100" EventName="BeforePrint" PropertyName="Text" Expression="[][[Title]='Green County OSTF Acquisition Funds'].sum([EstGrantAmount])" />
                       </ExpressionBindings>
@@ -245,7 +245,7 @@
                       </ExpressionBindings>
                       <StylePriority Ref="118" UseFont="false" UseBorders="false" UseTextAlignment="false" />
                     </Item1>
-                    <Item2 Ref="119" ControlType="XRTableCell" Name="tableCell6" Weight="1.6166668701171876" TextFormatString="{0:$####,###}" Multiline="true" ProcessNullValues="SuppressAndShrink" Text="tableCell2" TextAlignment="MiddleRight" Font="Segoe UI Semilight, 10pt" Borders="Left, Right, Bottom">
+                    <Item2 Ref="119" ControlType="XRTableCell" Name="tableCell6" Weight="1.6166668701171876" TextFormatString="{0:$0.00}" Multiline="true" ProcessNullValues="SuppressAndShrink" Text="tableCell2" TextAlignment="MiddleRight" Font="Segoe UI Semilight, 10pt" Borders="Left, Right, Bottom">
                       <ExpressionBindings>
                         <Item1 Ref="120" EventName="BeforePrint" PropertyName="Text" Expression="Iif([Title]like'%Demolition Funds%',[EstGrantAmount],'')&#xA;" />
                       </ExpressionBindings>
