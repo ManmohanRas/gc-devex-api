@@ -203,7 +203,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DevExpress.AspNetCore.Dashboard" Version="22.1.6" />
     <PackageReference Include="DevExpress.AspNetCore.Reporting" Version="22.1.6" />
     <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="3.0.1" />
     <PackageReference Include="Microsoft.CodeAnalysis" Version="4.8.0" />
