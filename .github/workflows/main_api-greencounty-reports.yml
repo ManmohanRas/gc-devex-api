@@ -52,4 +52,5 @@ jobs:
           app-name: 'api-greencounty-reports'
           slot-name: 'Production'
           package: .
+
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BFA8967F55054D45938F5EC1D555E246 }}
