@@ -2,7 +2,7 @@
   <Title Text="" Alignment="Left" />
   <DataSources>
     <SqlDataSource Name="rept_usp_get_flood_annual_summary_report" ComponentName="sqlDataSource1">
-      <Connection Name="PresTrustDbConnectionStrings" FromAppConfig="true" />
+      <Connection Name="GreenCountyDbConnectionStrings" FromAppConfig="true" />
       <Query Type="StoredProcQuery" Name="usp_get_level2_farm_annual_summary_report">
         <ProcName>rept.usp_get_level2_farm_annual_summary_report</ProcName>
       </Query>

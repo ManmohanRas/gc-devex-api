@@ -2,7 +2,7 @@
   <Title Text="" Alignment="Left" />
   <DataSources>
     <SqlDataSource Name="rept_usp_get_hist_annual_summary_report" ComponentName="sqlDataSource1">
-      <Connection Name="PresTrustDbConnectionStrings" FromAppConfig="true" />
+      <Connection Name="GreenCountyDbConnectionStrings" FromAppConfig="true" />
       <Query Type="SelectQuery" Name="Core_View_AgencyEntities_HIST">
         <Tables>
           <Table Name="Core.View_AgencyEntities_HIST" />
