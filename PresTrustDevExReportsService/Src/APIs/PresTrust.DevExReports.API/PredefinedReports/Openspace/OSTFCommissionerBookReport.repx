@@ -114,7 +114,7 @@
         <Item2 Ref="67" ControlType="XRLine" Name="line2" SizeF="774.1666,4.142456" LocationFloat="0,0" ForeColor="255,217,217,230" BorderColor="255,217,217,230">
           <StylePriority Ref="68" UseForeColor="false" UseBorderColor="false" />
         </Item2>
-        <Item3 Ref="69" ControlType="XRLabel" Name="label17" Multiline="true" Text="Green County" TextAlignment="MiddleLeft" SizeF="123.6812,19.08341" LocationFloat="10,22.0615635" Font="Segoe UI Semilight, 10pt" ForeColor="255,116,120,141" BackColor="White" Padding="2,2,0,0,100">
+        <Item3 Ref="69" ControlType="XRLabel" Name="label17" Multiline="true" Text="Green County" TextAlignment="MiddleLeft" SizeF="125.6812,19.08341" LocationFloat="10,22.0615635" Font="Segoe UI Semilight, 10pt" ForeColor="255,116,120,141" BackColor="White" Padding="2,2,0,0,100">
           <StylePriority Ref="70" UseFont="false" UseForeColor="false" UseBackColor="false" UseTextAlignment="false" />
         </Item3>
         <Item4 Ref="71" ControlType="XRPageInfo" Name="pageInfo2" TextFormatString="Page : {0 } / {1}" TextAlignment="MiddleCenter" SizeF="88.83331,19.0834084" LocationFloat="337.000122,22.0615635" Font="Segoe UI Semilight, 10pt" ForeColor="255,116,120,141" Padding="2,2,0,0,100">
