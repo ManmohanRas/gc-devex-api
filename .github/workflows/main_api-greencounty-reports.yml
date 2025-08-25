@@ -16,7 +16,7 @@ jobs:
       - name: Set up .NET SDK
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.0.x'  # You can use '8.0.x' if you're not upgrading (not recommended)
+          dotnet-version: '5.0.x'  # You can use '8.0.x' if you're not upgrading (not recommended)
 
       - name: Create nuget.config with DevExpress feed
         shell: bash
@@ -30,7 +30,7 @@ jobs:
           </configuration>" > nuget.config
 
       - name: Restore dependencies
-        run: dotnet restore PresTrustDevExReportsService/Src/APIs/PresTrust.DevExReports.API/PresTrust.DevExReports.API.csproj --configfile nuget.config
+        run: dotnet restore PresTrustDevExReportsService/Src/APIs/PresTrust.DevExReports.API/PresTrust.DevExReports.API.csproj --configfile PresTrustDevExReportsService/nuget.config
 
       - name: Build the project
         run: dotnet build PresTrustDevExReportsService/Src/APIs/PresTrust.DevExReports.API/PresTrust.DevExReports.API.csproj --no-restore --configuration Release
@@ -46,4 +46,8 @@ jobs:
           slot-name: 'production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BFA8967F55054D45938F5EC1D555E246 }}
           package: ./publish
+
+
+
+
 
