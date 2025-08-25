@@ -30,7 +30,7 @@ jobs:
           </configuration>" > nuget.config
 
       - name: Restore dependencies
-        run: dotnet restore PresTrustDevExReportsService/Src/APIs/PresTrust.DevExReports.API/PresTrust.DevExReports.API.csproj --configfile nuget.config
+        run: dotnet restore PresTrustDevExReportsService/Src/APIs/PresTrust.DevExReports.API/PresTrust.DevExReports.API.csproj --configfile PresTrustDevExReportsService/nuget.config
 
       - name: Build the project
         run: dotnet build PresTrustDevExReportsService/Src/APIs/PresTrust.DevExReports.API/PresTrust.DevExReports.API.csproj --no-restore --configuration Release
@@ -46,6 +46,7 @@ jobs:
           slot-name: 'production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BFA8967F55054D45938F5EC1D555E246 }}
           package: ./publish
+
 
 
 
