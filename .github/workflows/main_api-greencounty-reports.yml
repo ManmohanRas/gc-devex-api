@@ -20,10 +20,10 @@ jobs:
 
       - name: Inject DevExpress API Key
         run: |
-          sed -i "s|%DEVEXPRESS_NUGET_KEY%|${{ secrets.DEVEXPRESS_NUGET_KEY }}|g" nuget.config
+          sed -i "s|%DEVEXPRESS_NUGET_KEY%|${{ secrets.DEVEXPRESS_NUGET_KEY }}|g" C:\Green County\gc-devex-api\PresTrustDevExReportsService\nuget.config
  
       - name: Restore NuGet Packages
-        run: dotnet restore --configfile nuget.config
+        run: dotnet restore --configfile C:\Green County\gc-devex-api\PresTrustDevExReportsService\nuget.config
 
       - name: Create nuget.config with DevExpress feed
         shell: bash
@@ -53,5 +53,6 @@ jobs:
           slot-name: 'production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BFA8967F55054D45938F5EC1D555E246 }}
           package: ./publish
+
 
 
