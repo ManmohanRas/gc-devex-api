@@ -16,6 +16,7 @@ using PresTrust.DevExReports.API.Extensions;
 using PresTrust.DevExReports.API.Services;
 using PresTrust.DevExReports.API.Configurators;
 using static PresTrust.DevExReports.API.Domain.DevExReportsDomainConstants;
+using DevExpress.XtraReports.Web.WebDocumentViewer;
 
 namespace PresTrust.DevExReports.API
 {
@@ -83,6 +84,7 @@ namespace PresTrust.DevExReports.API
 
             DevExpress.XtraReports.Configuration.Settings.Default.UserDesignerOptions.DataBindingMode = DevExpress.XtraReports.UI.DataBindingMode.Expressions;
             DevExpress.XtraReports.Web.Extensions.ReportStorageWebExtension.RegisterExtensionGlobal(new CustomReportStorageWebExtension(env));
+            DevExpress.Utils.AzureCompatibility.Enable = true;
         }
     }
 }

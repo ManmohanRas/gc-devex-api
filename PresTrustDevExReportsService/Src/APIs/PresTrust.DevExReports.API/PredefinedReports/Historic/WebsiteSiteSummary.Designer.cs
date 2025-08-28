@@ -28,7 +28,6 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Historic {
             this.tableCell2 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableCell>("tableCell2");
             this.tableCell3 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableCell>("tableCell3");
             this.tableCell4 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableCell>("tableCell4");
-            this.pictureBox1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPictureBox>("pictureBox1");
             this.line1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLine>("line1");
             this.label1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label1");
             this.label2 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label2");
@@ -53,6 +52,7 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Historic {
             this.pageInfo1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPageInfo>("pageInfo1");
             this.label60 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label60");
             this.pictureBox3 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPictureBox>("pictureBox3");
+            this.pictureBox1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPictureBox>("pictureBox1");
 
             // Parameters
             this.FundingYear = reportInitializer.GetParameter("FundingYear");
@@ -80,7 +80,6 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Historic {
         private DevExpress.XtraReports.UI.XRTableCell tableCell2;
         private DevExpress.XtraReports.UI.XRTableCell tableCell3;
         private DevExpress.XtraReports.UI.XRTableCell tableCell4;
-        private DevExpress.XtraReports.UI.XRPictureBox pictureBox1;
         private DevExpress.XtraReports.UI.XRLine line1;
         private DevExpress.XtraReports.UI.XRLabel label1;
         private DevExpress.XtraReports.UI.XRLabel label2;
@@ -112,5 +111,6 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Historic {
         private DevExpress.XtraReports.Parameters.Parameter FundingYear;
         private DevExpress.XtraReports.Parameters.Parameter SiteName;
         private DevExpress.XtraReports.Parameters.Parameter parambloburl;
+        private DevExpress.XtraReports.UI.XRPictureBox pictureBox1;
     }
 }

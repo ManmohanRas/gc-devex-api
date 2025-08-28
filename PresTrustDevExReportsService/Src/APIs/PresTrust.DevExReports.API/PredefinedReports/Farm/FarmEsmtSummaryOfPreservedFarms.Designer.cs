@@ -106,7 +106,6 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Farm {
             this.tableCell3 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableCell>("tableCell3");
             this.tableCell4 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableCell>("tableCell4");
             this.panel3 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPanel>("panel3");
-            this.pictureBox1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPictureBox>("pictureBox1");
             this.label51 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label51");
             this.label50 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label50");
             this.label49 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label49");
@@ -117,6 +116,7 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Farm {
             this.label9 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label9");
             this.label1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label1");
             this.label6 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label6");
+            this.pictureBox1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPictureBox>("pictureBox1");
 
             // Data Sources
             this.sqlDataSource1 = reportInitializer.GetDataSource<DevExpress.DataAccess.Sql.SqlDataSource>("sqlDataSource1");
@@ -211,7 +211,6 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Farm {
         private DevExpress.XtraReports.UI.XRTableCell tableCell3;
         private DevExpress.XtraReports.UI.XRTableCell tableCell4;
         private DevExpress.XtraReports.UI.XRPanel panel3;
-        private DevExpress.XtraReports.UI.XRPictureBox pictureBox1;
         private DevExpress.XtraReports.UI.XRLabel label51;
         private DevExpress.XtraReports.UI.XRLabel label50;
         private DevExpress.XtraReports.UI.XRLabel label49;
@@ -223,5 +222,6 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Farm {
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private DevExpress.XtraReports.UI.XRLabel label1;
         private DevExpress.XtraReports.UI.XRLabel label6;
+        private DevExpress.XtraReports.UI.XRPictureBox pictureBox1;
     }
 }

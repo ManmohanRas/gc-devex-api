@@ -21,7 +21,6 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Farm {
             this.BottomMargin = reportInitializer.GetControl<DevExpress.XtraReports.UI.BottomMarginBand>("BottomMargin");
             this.ReportHeader = reportInitializer.GetControl<DevExpress.XtraReports.UI.ReportHeaderBand>("ReportHeader");
             this.DetailReport = reportInitializer.GetControl<DevExpress.XtraReports.UI.DetailReportBand>("DetailReport");
-            this.pictureBox1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPictureBox>("pictureBox1");
             this.label51 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label51");
             this.label50 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label50");
             this.label49 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label49");
@@ -70,6 +69,7 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Farm {
             this.tableCell16 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableCell>("tableCell16");
             this.tableRow3 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableRow>("tableRow3");
             this.tableCell15 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableCell>("tableCell15");
+            this.pictureBox1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPictureBox>("pictureBox1");
 
             // Data Sources
             this.sqlDataSource1 = reportInitializer.GetDataSource<DevExpress.DataAccess.Sql.SqlDataSource>("sqlDataSource1");
@@ -87,7 +87,6 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Farm {
         private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
         private DevExpress.XtraReports.UI.DetailReportBand DetailReport;
-        private DevExpress.XtraReports.UI.XRPictureBox pictureBox1;
         private DevExpress.XtraReports.UI.XRLabel label51;
         private DevExpress.XtraReports.UI.XRLabel label50;
         private DevExpress.XtraReports.UI.XRLabel label49;
@@ -141,5 +140,6 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Farm {
         private DevExpress.XtraReports.UI.XRControlStyle Style2;
         private DevExpress.XtraReports.UI.CalculatedField PercentTownSize;
         private DevExpress.XtraReports.UI.CalculatedField PercentTownFarmlandPreserved;
+        private DevExpress.XtraReports.UI.XRPictureBox pictureBox1;
     }
 }
