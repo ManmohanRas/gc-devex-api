@@ -569,10 +569,10 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Historic {
             this.tableCell172 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableCell>("tableCell172");
             this.Detail8 = reportInitializer.GetControl<DevExpress.XtraReports.UI.DetailBand>("Detail8");
             this.ReportHeader5 = reportInitializer.GetControl<DevExpress.XtraReports.UI.ReportHeaderBand>("ReportHeader5");
-            this.pictureBox1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPictureBox>("pictureBox1");
             this.line4 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLine>("line4");
             this.label98 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label98");
             this.label50 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label50");
+            this.pictureBox1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPictureBox>("pictureBox1");
 
             // Parameters
             this.Application = reportInitializer.GetParameter("Application");
@@ -1143,7 +1143,6 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Historic {
         private DevExpress.XtraReports.UI.XRTableCell tableCell172;
         private DevExpress.XtraReports.UI.DetailBand Detail8;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader5;
-        private DevExpress.XtraReports.UI.XRPictureBox pictureBox1;
         private DevExpress.XtraReports.UI.XRLine line4;
         private DevExpress.XtraReports.UI.XRLabel label98;
         private DevExpress.XtraReports.UI.XRLabel label50;
@@ -1154,5 +1153,6 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Historic {
         private DevExpress.XtraReports.UI.CalculatedField AmountCalc;
         private DevExpress.XtraReports.UI.CalculatedField AmountCalc1;
         private DevExpress.XtraReports.Parameters.Parameter Application;
+        private DevExpress.XtraReports.UI.XRPictureBox pictureBox1;
     }
 }
