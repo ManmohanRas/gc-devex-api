@@ -27,6 +27,7 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Openspace {
             this.DetailReport4 = reportInitializer.GetControl<DevExpress.XtraReports.UI.DetailReportBand>("DetailReport4");
             this.DetailReport5 = reportInitializer.GetControl<DevExpress.XtraReports.UI.DetailReportBand>("DetailReport5");
             this.ReportHeader = reportInitializer.GetControl<DevExpress.XtraReports.UI.ReportHeaderBand>("ReportHeader");
+            this.pictureBox1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPictureBox>("pictureBox1");
             this.label15 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label15");
             this.label19 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label19");
             this.pageInfo3 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPageInfo>("pageInfo3");
@@ -236,7 +237,6 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Openspace {
             this.tableCell47 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableCell>("tableCell47");
             this.tableCell48 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableCell>("tableCell48");
             this.tableOfContents1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTableOfContents>("tableOfContents1");
-            this.pictureBox1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRPictureBox>("pictureBox1");
 
             // Parameters
             this.FundingYear = reportInitializer.GetParameter("FundingYear");
@@ -278,6 +278,7 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Openspace {
         private DevExpress.XtraReports.UI.DetailReportBand DetailReport4;
         private DevExpress.XtraReports.UI.DetailReportBand DetailReport5;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
+        private DevExpress.XtraReports.UI.XRPictureBox pictureBox1;
         private DevExpress.XtraReports.UI.XRLabel label15;
         private DevExpress.XtraReports.UI.XRLabel label19;
         private DevExpress.XtraReports.UI.XRPageInfo pageInfo3;
@@ -504,6 +505,5 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Openspace {
         private DevExpress.XtraReports.Parameters.Parameter Status;
         private DevExpress.XtraReports.Parameters.Parameter Application;
         private DevExpress.XtraReports.Parameters.Parameter parambloburl;
-        private DevExpress.XtraReports.UI.XRPictureBox pictureBox1;
     }
 }
