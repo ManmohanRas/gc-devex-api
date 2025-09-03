@@ -27,7 +27,7 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Farm {
             this.label48 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label48");
             this.label47 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label47");
             this.label3 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label3");
-            this.FarmEsmtTargetedFarmEligibilityReport = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("FarmEsmtTargetedFarmEligibilityReport");
+            this.label = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRLabel>("label");
             this.Detail1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.DetailBand>("Detail1");
             this.ReportHeader1 = reportInitializer.GetControl<DevExpress.XtraReports.UI.ReportHeaderBand>("ReportHeader1");
             this.table2 = reportInitializer.GetControl<DevExpress.XtraReports.UI.XRTable>("table2");
@@ -74,7 +74,7 @@ namespace PresTrust.DevExReports.API.PredefinedReports.Farm {
         private DevExpress.XtraReports.UI.XRLabel label48;
         private DevExpress.XtraReports.UI.XRLabel label47;
         private DevExpress.XtraReports.UI.XRLabel label3;
-        private DevExpress.XtraReports.UI.XRLabel FarmEsmtTargetedFarmEligibilityReport;
+        private DevExpress.XtraReports.UI.XRLabel label;
         private DevExpress.XtraReports.UI.DetailBand Detail1;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader1;
         private DevExpress.XtraReports.UI.XRTable table2;
