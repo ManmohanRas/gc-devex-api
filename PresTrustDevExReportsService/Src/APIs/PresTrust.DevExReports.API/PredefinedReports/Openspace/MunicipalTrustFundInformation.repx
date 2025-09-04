@@ -102,7 +102,7 @@
             </Item1>
           </Controls>
         </Item1>
-        <Item2 Ref="54" ControlType="GroupHeaderBand" Name="GroupHeader2" HeightF="25">
+        <Item2 Ref="54" ControlType="GroupHeaderBand" Name="GroupHeader2" PageBreak="BeforeBand" HeightF="25">
           <Controls>
             <Item1 Ref="55" ControlType="XRTable" Name="table1" TextAlignment="MiddleLeft" SizeF="774.999939,25" LocationFloat="0,0" Font="Times New Roman, 8pt" ForeColor="White" BackColor="DarkGreen" Padding="2,2,0,0,96">
               <Rows>
