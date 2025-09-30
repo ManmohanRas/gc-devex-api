@@ -1,6 +1,6 @@
 using DevExpress.AspNetCore;
 using DevExpress.AspNetCore.Reporting;
-//using DevExpress.DashboardAspNetCore;
+using DevExpress.DashboardAspNetCore;
 using DevExpress.DashboardWeb.Native;
 using DevExpress.DashboardWeb;
 using Microsoft.Extensions.FileProviders;
@@ -26,7 +26,7 @@ namespace PresTrust.DevExReports.API
         {
             Configuration = configuration;
             FileProvider = hostingEnvironment.ContentRootFileProvider;
-            //DashboardExportSettings.CompatibilityMode = DashboardExportCompatibilityMode.Restricted;
+            DashboardExportSettings.CompatibilityMode = DashboardExportCompatibilityMode.Restricted;
         }
 
         public IFileProvider FileProvider { get; }
@@ -41,8 +41,8 @@ namespace PresTrust.DevExReports.API
             services.AddHttpContextAccessor();
             var connectionString = new ConnectionStringConfiguration(Configuration.GetConnectionString(AppSettingKeys.PRESTRUST_SQL_DB_CONNECTION_STRING_SECTION));
             services.AddSingleton(connectionString);
-            //services.AddScoped<CountyDashboardConfigurator>();
-            //services.AddScoped<AgencyDashboardConfigurator>();
+            services.AddScoped<CountyDashboardConfigurator>();
+            services.AddScoped<AgencyDashboardConfigurator>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -63,22 +63,22 @@ namespace PresTrust.DevExReports.API
 
             app.UseEndpoints(endpoints =>
             {
-                //EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "county/header", "CountyHeaderDashboard");
-                //EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "county/openspace", "CountyOpenspaceDashboard");
-                //EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "county/historic", "CountyHistoricDashboard");
-                //EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "county/flood", "CountyFloodDashboard");
-                //EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "county/farmland", "CountyFarmlandDashboard");
-                //EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "county/trails", "CountyTrailsDashboard");
-                //EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "county/mua", "CountyMuaDashboard");
-                //EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "county/park", "CountyParkDashboard");
-                //EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "agency/header", "AgencyHeaderDashboard");
-                //EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "agency/openspace", "AgencyOpenspaceDashboard");
-                //EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "agency/historic", "AgencyHistoricDashboard");
-                //EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "agency/flood", "AgencyFloodDashboard");
-                //EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "agency/farmland", "AgencyFarmlandDashboard");
-                //EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "agency/trails", "AgencyTrailsDashboard");
-                //EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "agency/mua", "AgencyMuaDashboard");
-                //EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "agency/park", "AgencyParkDashboard");
+                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "county/header", "CountyHeaderDashboard");
+                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "county/openspace", "CountyOpenspaceDashboard");
+                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "county/historic", "CountyHistoricDashboard");
+                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "county/flood", "CountyFloodDashboard");
+                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "county/farmland", "CountyFarmlandDashboard");
+                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "county/trails", "CountyTrailsDashboard");
+                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "county/mua", "CountyMuaDashboard");
+                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "county/park", "CountyParkDashboard");
+                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "agency/header", "AgencyHeaderDashboard");
+                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "agency/openspace", "AgencyOpenspaceDashboard");
+                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "agency/historic", "AgencyHistoricDashboard");
+                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "agency/flood", "AgencyFloodDashboard");
+                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "agency/farmland", "AgencyFarmlandDashboard");
+                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "agency/trails", "AgencyTrailsDashboard");
+                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "agency/mua", "AgencyMuaDashboard");
+                EndpointRouteBuilderExtension.MapDashboardRoute(endpoints, "agency/park", "AgencyParkDashboard");
                 endpoints.MapControllers();
             });
 
